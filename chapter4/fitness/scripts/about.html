@@ -5,6 +5,7 @@
 <head>
     <title>Forward Fitness Club</title>
     <meto charset="utf-8">
+      <link rel="stylesheet" href="/Users/carlos-theran/Documents/FAMU/famu-spring2023/courses/CAP4064-NETWORK-MULT/CAP4064-301-SP2023/chapter4/fitness/css/style.css">
 </head>
 <body>
     <div id="container">
@@ -12,24 +13,24 @@
             <!--This header is for the website name and logo -->
             <h1>Forward Fitness Club</h1>
             <a href="index.html"> 
-               <img src="/Users/carlos-theran/Documents/FAMU/famu-spring2023/courses/CAP4064-NETWORK-MULT/cap4064-coding/chapter3/fitness/images/forward-fitness-logo.png" atl="Forward Fitness Club logo" height="220" width="297"> 
+               <img src="/Users/carlos-theran/Documents/FAMU/famu-spring2023/courses/CAP4064-NETWORK-MULT/CAP4064-301-SP2023/chapter4/fitness/images/forward-fitness-logo.png" atl="Forward Fitness Club logo"> 
             </a>
         </header>
         <nav>
-            <p>
-                <a href="index.html">Home</a> &nbsp; &#9475; &nbsp;
-                <a href="about.html">About Us</a> &nbsp; &#9475; &nbsp;
-                <a href="classes.html">Classes</a> &nbsp; &#9475; &nbsp;
-                <a href="nutrition.html">Nutrition</a> &nbsp; &#9475; &nbsp;
-                <a href="contact.html">Contact Us</a> 
-            </p>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="classes.html">Classes</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
         </nav>
     
         <main>
             <!-- Use the main area to add the main content of your webpage -->
           <div id="weight">
            <h1>Weight</h1>
-            <img src="/Users/carlos-theran/Documents/FAMU/famu-spring2023/courses/CAP4064-NETWORK-MULT/cap4064-coding/chapter3/fitness/images/people-with-weights.jpg" atl="Two people working out with a weight in each band" height="300" width="450">
+            <img src="/Users/carlos-theran/Documents/FAMU/famu-spring2023/courses/CAP4064-NETWORK-MULT/CAP4064-301-SP2023/chapter4/fitness/images/people-with-weights.jpg" atl="Two people working out with a weight in each band">
 
             <p> Our facility includes a weight training area with several weight options. Build lean muscle with weights and improve your core with weight training.</p>
 
@@ -42,20 +43,36 @@
 
           <div id="cardio">
             <h1>Cardio</h1>
-            <img class="equip"src="/Users/carlos-theran/Documents/FAMU/famu-spring2023/courses/CAP4064-NETWORK-MULT/cap4064-coding/chapter3/fitness/images/people-workingout-machines.jpg" alt="Cardio equipment" height="300" width="450"> 
+            <img class="equip"src="/Users/carlos-theran/Documents/FAMU/famu-spring2023/courses/CAP4064-NETWORK-MULT/CAP4064-301-SP2023/chapter4/fitness/images/people-workingout-machines.jpg" alt="Cardio equipment"> 
     
-          <p>
+            <p>
             Burn fat through cardio workouts. Experts recommend 150 minutes of cardio each week. We have several equipment choices for your workout.
-          </p>
+            </p>
 
+            <ul>
+              <li>Treadmills</li>
+              <li>Elliptical Machines</li>
+              <li>Exercise Bikes</li>
+            </ul>
+          </div>
+
+        <div id="training">
+          <h1>Personal Training</h1>
+          <img class="equip"src="/Users/carlos-theran/Documents/FAMU/famu-spring2023/courses/CAP4064-NETWORK-MULT/CAP4064-301-SP2023/chapter4/fitness/images/personal-trainer.jpg" alt="Cardio equipment"> 
+          <p>
+            Our certified personal trainers work with you to help yoou ontain your 
+            fitness goals and track you progress. Personal training has many benefits.
+          </p>
           <ul>
-            <li>Treadmills</li>
-            <li>Elliptical Machines</li>
-            <li>Exercise Bikes</li>
+            <li>Accountability</li>
+            <li>Personalized Program</li>
+            <li>Consistent Support and Motivation</li>
           </ul>
+  
         </div>
 
         <div id="exercises">
+
             <h1>Commons Exercise</h1>
             <p>The following are common exercises that we encourage our client to do as part of their daily exercise routine.</p>
             <dl>
@@ -70,12 +87,11 @@
                  <p>For more information about how to stay active, visit the <a href="https://www.hhs.gov/fitness/be-active/index.html" target="_blank"> U.S Deparment of Healt and Human Service</a></p>   
             </dl>
         </div>
-        </main>
+      </main>
         <footer>
          <p>&copy;Copyright 2023. All right reserved.</p>
           <p> <a  href="mailto:forwardfitness@club.net"> forwardfitness@club.net </a></p>
         </footer>
     </div>
-
 </body>
 </html>
