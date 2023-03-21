@@ -28,6 +28,7 @@ header{
     top: 0;
     background-color: #000;
     height: 190px;
+    padding-bottom: 2%;
 }
 
 /*set the logo in the center*/
@@ -108,8 +109,6 @@ footer p a{
 /* Style rule for div tag with ids weight, cardio training*/
 #weight, #cardio, #training
 {
-    width: 29%;
-    float: left;
     margin: 0 2%;
 }
 
@@ -130,6 +129,12 @@ footer p a{
 /* Style rule for div tag with ids exercises and dd tag*/
 #exercises dd{
     padding: 0.5% 1% 2% 0;
+}
+
+/* Style rules for */
+#contact .contact-email-link{
+    color: #666600;
+    text-align: center;
 }
 
 .map{
@@ -171,12 +176,15 @@ footer p a{
 .tel-link a{
     color: #fff;
     text-decoration: none;
+    font-size: 1.5em;
     display: block;
 }
 
 .hours{
     margin-left: 10%;
 }
+
+
 
 /* Media Queris for Tablet Viewport*/
 
@@ -231,6 +239,11 @@ footer p a{
   #exercise dd{
     padding: 0.5% 1% 2% 0;
   }
+
+  .tel-num{
+    font-size: 1.25em;
+    text-align: center;
+}
 
  .map{
     width: 600px;
