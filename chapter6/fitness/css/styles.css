@@ -6,15 +6,16 @@
 
 
 /* CSS reset*/
-body, header, nav, footer, h1, div, img, ul, figure, figcaption{
+body, header, nav, footer, h1, div, img, ul, figcaption, figure, article, aside{
     margin:  0;
     padding: 0;
     border: 0;
 }
 
 *{
-   box-sizing: border-box; 
+    box-sizing: border-box;
 }
+
 
 /* Style rules for body and images */
 body{
@@ -118,6 +119,26 @@ footer p a{
     text-shadow: 5px 5px 8px #ccc;
 }
 
+.frame{
+    position: relative;
+    max-width: 450px;
+    margin: 2% auto;
+}
+
+.pic-text{
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
 .external_link{
     color: #666600;
     font-weight: bold;
@@ -129,17 +150,12 @@ footer p a{
     width: 96%;
     height: 50%;
 }
-
 .tablet-desktop{
     display: none;
 }
 
 .mobile{
     display: block;
-}
-
-.mobile h3{
-    text-shadow: 5px 5px 8px #ccc;
 }
 
 /*   new addition lecture Feb 20th 2023*/
@@ -186,38 +202,47 @@ main{
     text-decoration: none;
 }
 
-.frame{
-    position: relative;
-    max-width: 450px;
-    margin: 2% auto;
+.mobile h3{
+    text-shadow: 5px 5px 8px #ccc;
 }
 
-.pic-text
+article{
+    padding: 2%;
+}
+
+article h3{
+    text-align: center;
+}
+
+article img{
+    margin: 0 auto;
+}
+
+article ul{
+    margin-left: 10%;
+}
+
+article:nth-last-of-type(2)
 {
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  color:#fff;
-  padding: 20px;
-  width: 100%;
-  text-align: center;
-  font-family: Verdana, Arial, sans-serif;
-  font-size: 1.5em;
-  font-weight: bold;
+ background-color: rgba(204, 204, 204, 0.3);  
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-gap: 20px;
+aside {
+    text-align: center; 
+    font-size: 1.25em;
+    font-style: italic;
+    font-weight: bold; 
+    padding: 2%;
+    background-color: rgba(204, 204, 204, 0.5);
+    box-shadow: 5px 5px 8px #000; 
+    text-shadow: 5px 5px 5px #b3b3b3;
+    border-radius: 0 15px; 
+
 }
 
-.grid-item4{
-    grid-column: 1 /span 3;
-}
-
-article:nth-of-type(2){
-    background-color: rgba(204, 204, 204, 0.3);
+.grid-item4 {
+    grid-column: 1 / span 3;
+    
 }
 /* New feature added Feb 28*/
 
@@ -290,19 +315,24 @@ main ul{
     height:450px;
 }
 
-.frame{
-   opacity: 1;
-   box-shadow: 8px 8px 10px #808080;
+.frame:hover {
+    opacity: 1;
+    box-shadow: 8px 8px 10px #808080;
 }
 
-/*.pic-text{
-    font-size: 1.5em;
-    padding: 20%;
-}*/
+.grid { 
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+}
 
-.frame:hover{
-    opacity: 1;
-    box-shadow: 8px 8px 10px #ccc;
+.frame { 
+    opacity: 0.9;  
+}
+
+.pic-text {
+    font-size: 1.5em;
+    padding: 20px; 
 }
 
 }
@@ -311,7 +341,7 @@ main ul{
 
 @media screen and (min-width: 769px), print{
     /* Desktop Viewport: Style rule for header */ 
-
+    
     header{
         width: 25%;
         float: left;
@@ -367,21 +397,8 @@ main ul{
         color: #000;
         background-color: #fff;
     }
-
-    .frame{
-    position: relative;
-    max-width: 450px;
-    margin: 2% auto;
 }
 
-}
-    /* Media Query for Large Desktop Viewports */
-/* @media screen and (min-width: 1083px), print { 
-    #container {
-        width: 1920px;
-        margin: 0 auto;
-    }
-} */
 
     /* Media Query for Print */ 
 @media print {    /*add print on each media screen definition*/
